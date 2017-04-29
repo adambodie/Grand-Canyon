@@ -7,21 +7,21 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('one');
-  this.route('two');
-  this.route('three');
-  this.route('four');
-  this.route('five');
-  this.route('six');
-  this.route('seven');
-  this.route('eight');
-  this.route('nine');
-  this.route('ten');
-  this.route('eleven');
-  this.route('twelve');
-  this.route('thirteen');
-  this.route('fourteen');
-  this.route('fifteen');
+  this.route('one', {path: '/1'});
+  this.route('two', {path: '/2'});
+  this.route('three', {path: '/3'});
+  this.route('four', {path: '/4'});
+  this.route('five', {path: '/5'});
+  this.route('six', {path: '/6'});
+  this.route('seven', {path: '/7'});
+  this.route('eight', {path: '/8'});
+  this.route('nine', {path: '/9'});
+  this.route('ten', {path: '/10'});
+  this.route('eleven', {path: '/11'});
+  this.route('twelve', {path: '/12'});
+  this.route('thirteen', {path: '/13'});
+  this.route('fourteen', {path: '/14'});
+  this.route('fifteen', {path: '/15'});
 });
 
 export default Router;

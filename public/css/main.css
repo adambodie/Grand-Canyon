@@ -22,7 +22,7 @@ blockquote {
 
 /* jumbotron CSS */
 .jumbotron {
-    background-image:url("../images/banner.jpg");
+    background-image:url("/img/banner.jpg");
     background-position: center;
     height: 295px;
 }

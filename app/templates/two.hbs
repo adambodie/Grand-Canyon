@@ -1,0 +1,107 @@
+    <div class="row">
+        <div class="col-lg-4">
+            <div ng-app="">
+                 <h2>Who's going to the Grand Canyon:</h2>
+                <p>Enter a name:
+                    <input type="text" ng-model="name" ng-init="name = 'Adam'" style="color:black">
+                </p>
+                <br>
+                 <h4>{{name}} is going to the Grand Canyon!</h4>
+                <br>
+                <p>Truth is, you can add a whole list of people to this list and the statement would be true. Last year, almost 5 million people visited the Grand Canyon. No wonder it's considered on of the Seven Natural Wonders of the World.</p>
+                <p>As of last year, the Grand Canyon is the second most visited National Park in the United States on a yearly average, behind the Great Smoky Mountains, which averages more than 10 million visitors a year.</p>
+            </div>
+            <div id="otherParks">
+                 <h2>Wait a minute, aren't there some other National Parks that I have visited?</h2>
+                <p>Yes, I've been to plenty of National Parks in the United States. Lets take the time to revisit some of those parks</p>
+                <ul>
+                    <li>
+                        <img src="img/crater.jpg" class="img-thumbnail" alt="Crater Lake" width="90" height="60">Crater Lake National Park</li>
+                    <li>
+                        <img src="img/yellowstone.JPG" class="img-thumbnail" alt="Yellowstone" width="90" height="60">Yellowstone National Park</li>
+                    <li>
+                        <img src="img/haleakala.JPG" class="img-thumbnail" alt="Haleakala" width="90" height="60">Haleakala National Park</li>
+                    <li>
+                        <img src="img/joshua.JPG" class="img-thumbnail" alt="Joshua Tree" width="90" height="60">Joshua Tree National Park</li>
+                    <li>
+                        <img src="img/rainier.jpg" class="img-thumbnail" alt="Mount Rainier" width="90" height="60">Mount Rainier National Park</li>
+                </ul>
+                <p>So there you have it, 5 National Parks in 7 different States. And adding the Grand Canyon to the list makes 6 National Parks in 8 States.</p>
+                 <h4>Hold up, 6 parks in 8 States?  How do you get that number?</h4>
+                <p>Well that's easy, the famed Yellowstone National Park, the first of many astonishing National Parks in the United States, is technically located in three states: While we all agree it's in Wyoming, there are also slivers of the
+                    federally mandated land of the National Park in Montana and in Idaho. With that said, having entered the park through West Yellowstone, Montana, it's better to say that I only physically stepped foot in 7 states, as there's
+                    no entrance to Yellowstone in Idaho.</p>
+                <p>So there you have it, that would be 6 National Parks in 7 States. Enough of the Math, time to move on to Geography...</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+             <h2>Vacation</h2>
+            <p>What is a vacation? A vacation is a time to enjoy yourself, to get away from your problems, and most importantly, to have fun any way you like it. Some of us like to lounge on the beach and do nothing on vacation, others like to explore
+                the world and all of its fine glory. Whatever it may be, it's important not to being your problems with you on vacation. They need to stay home, where they belong (although it's better for them to go away completely, that doesn't
+                always happen).</p>
+            <p>With all of that said, let's take a look at all our big problems and make them go away</p>
+            <ul id="problems">
+                <li id="item1">Not knowing what your future will bring you</li>
+                <li id="item2">Being overworked at all hours of the day</li>
+                <li id="item3">Constantly on the go to get on the MAX, knowing that if you miss it, that it will cost you 10-15 minutes</li>
+                <li id="item4">Becky, the Neanderthal Jackass, a boss who doesn't know what she's doing</li>
+                <li id="item5">Not having enough time to yourself</li>
+                <li id="item6">Co-workers who think they're better than you.</li>
+                <li id="item7">Having too many interviews that don't go your way.</li>
+                <li id="item8">Crappy weather that makes you feel uninspired and depressed</li>
+
+            </ul>
+            <button id="hide" class="btn-block">Bye Bye!</button>
+        </div>
+        <div class="col-lg-4">
+             <h2>What should we bring?</h2>
+            <form style="font-size: 20px">
+                <input type="checkbox" name="item" value="Bathing Suit">Bathing Suit
+                <br>
+                <input type="checkbox" name="item" value="Camera">Camera
+                <br>
+                <input type="checkbox" name="item" value="Camera Charger">Camera Charger from Murfreesboro
+                <br>
+                <input type="checkbox" name="item" value="Chainsaw">Chainsaw
+                <br>
+                <input type="checkbox" name="item" value="Guns">Guns
+                <br>
+                <input type="checkbox" name="item" value="iPad">iPad
+                <br>
+                <input type="checkbox" name="item" value="iPhone">iPhone
+                <br>
+                <input type="checkbox" name="item" value="Laptop">Laptop
+                <br>
+                <input type="checkbox" name="item" value="Medicine">Medicine
+                <br>
+                <input type="checkbox" name="item" value="Pants">Pants
+                <br>
+                <input type="checkbox" name="item" value="Phone Charger">Phone Charger
+                <br>
+                <input type="checkbox" name="item" value="Shoes">Shoes
+                <br>
+                <input type="checkbox" name="item" value="Shorts">Shorts
+                <br>
+                <input type="checkbox" name="item" value="Socks">Socks
+                <br>
+                <input type="checkbox" name="item" value="Sunscreen">Sunscreen
+                <br>
+                <input type="checkbox" name="item" value="Sweatshirt">Sweatshirt
+                <br>
+                <input type="checkbox" name="item" value="T-Shirt">T-Shirt
+                <br>
+                <input type="checkbox" name="item" value="Tie">Tie
+                <br>
+                <input type="checkbox" name="item" value="Toiletries">Toiletries
+                <br>
+                <input type="checkbox" name="item" value="Tuxedo">Tuxedo
+                <br>
+                <input type="checkbox" name="item" value="Underwear">Underwear
+                <br>Other:
+                <br>
+                <textarea name="message" style="color:black" rows="5" cols="20"></textarea>
+                <br>
+                <button type="button" class="btn btn-success" onclick="alert('Great, now we are ready to go!!!')">Finalize</button>
+            </form>
+        </div>
+    </div>

@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'grandcanyon',
+    modulePrefix: 'gc',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

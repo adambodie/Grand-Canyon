@@ -1,9 +1,26 @@
 <div id="myCarousel" class="carousel-list carousel slide" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    <div class="item">
-         <h3>{{title}}</h3>
-        <img src="img/{{image}}.jpg" alt="{{alt}}" width="{{width}}" height="{{height}}">
-         <h4>{{description}}</h4>
+<div class="carousel-inner" role="listbox">
+  {{#each items as |item|}}
+    <div class="item {{if (eq item.id 0) 'active'}}">
+      <h3>{{item.title}}</h3>
+     <img src="img/{{item.image}}.jpg" alt="{{item.alt}}" class="img-responsive">
+      <h4>{{item.description}}</h4>
     </div>
-  </div>
+  {{/each}}
+</div>
+<!-- Indicators -->
+  <ol class="carousel-indicators">
+    {{#each items as |item|}}
+      <li data-target="#myCarousel" data-slide-to="{{item.id}}" class="{{if (eq item.id 0) 'active'}}"></li>
+    {{/each}}
+  </ol>
+                <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>

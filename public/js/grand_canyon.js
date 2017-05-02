@@ -1,5 +1,5 @@
-var myCenter = new google.maps.LatLng(36.056621, -112.136697);
 function initialize() {
+    var myCenter = new google.maps.LatLng(36.056621, -112.136697);
     var mapProp = {
         center: myCenter,
         zoom: 15,
@@ -8,72 +8,72 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
     var depot = new google.maps.Marker({
         position: myCenter,
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var mather = new google.maps.Marker({
         position: new google.maps.LatLng(36.061673, -112.107761),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var yavapai = new google.maps.Marker({
         position: new google.maps.LatLng(36.065940, -112.116774),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var mesquite = new google.maps.Marker({
         position: new google.maps.LatLng(36.055563, -112.145996),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var lookout = new google.maps.Marker({
         position: new google.maps.LatLng(36.057787, -112.141310),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var kolb = new google.maps.Marker({
         position: new google.maps.LatLng(36.057978, -112.142576),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var maswik = new google.maps.Marker({
         position: new google.maps.LatLng(36.053563, -112.144315),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var tovar = new google.maps.Marker({
         position: new google.maps.LatLng(36.057410, -112.137684),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var arizona = new google.maps.Marker({
         position: new google.maps.LatLng(36.056898, -112.140602),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var visitor = new google.maps.Marker({
         position: new google.maps.LatLng(36.059206, -112.109220),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var hopi = new google.maps.Marker({
         position: new google.maps.LatLng(36.074543, -112.155046),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var mohave = new google.maps.Marker({
         position: new google.maps.LatLng(36.072305, -112.166070),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var bright = new google.maps.Marker({
         position: new google.maps.LatLng(36.058126, -112.146624),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var store = new google.maps.Marker({
         position: new google.maps.LatLng(36.053386, -112.121395),
-        icon: 'adam.gif',
+        icon: 'img/adam.gif',
         animation: google.maps.Animation.BOUNCE
     });
     var village = new google.maps.Circle({
@@ -197,7 +197,3 @@ function initialize() {
         depotwindow.open(map, depot);
     });
 }
-google.maps.event.addDomListener(window, 'load', initialize);
-google.maps.event.addDomListener(window, 'resize', initialize);
-
-

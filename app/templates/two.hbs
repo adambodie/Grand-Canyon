@@ -1,0 +1,53 @@
+    <div class="row">
+        <div class="col-lg-4">
+            <h2>Who's going to the Grand Canyon:</h2>
+            <div>
+                <label>Enter a name:</label>
+                  {{input type="text" value=name placeholder="Enter your name"}}
+            </div>
+            <h4>{{name}} is going to the Grand Canyon!</h4>
+                <p>Truth is, you can add a whole list of people to this list and the statement would be true. Last year, almost 5 million people visited the Grand Canyon. No wonder it's considered on of the Seven Natural Wonders of the World.</p>
+                <p>As of last year, the Grand Canyon is the second most visited National Park in the United States on a yearly average, behind the Great Smoky Mountains, which averages more than 10 million visitors a year.</p>
+            <div id="otherParks">
+                 <h2>Wait a minute, aren't there some other National Parks that I have visited?</h2>
+                <p>Yes, I've been to plenty of National Parks in the United States. Lets take the time to revisit some of those parks</p>
+                <ul>
+                  {{#each model.parks as |park|}}
+                  <li><img src="img/{{park.image}}.jpg" class="img-thumbnail" width="90" height="60" alt={{park.alt}}>{{park.title}}</li>
+                  {{/each}}
+                </ul>
+                <p>So there you have it, 5 National Parks in 7 different States. And adding the Grand Canyon to the list makes 6 National Parks in 8 States.</p>
+                 <h4>Hold up, 6 parks in 8 States?  How do you get that number?</h4>
+                <p>Well that's easy, the famed Yellowstone National Park, the first of many astonishing National Parks in the United States, is technically located in three states: While we all agree it's in Wyoming, there are also slivers of the
+                    federally mandated land of the National Park in Montana and in Idaho. With that said, having entered the park through West Yellowstone, Montana, it's better to say that I only physically stepped foot in 7 states, as there's
+                    no entrance to Yellowstone in Idaho.</p>
+                <p>So there you have it, that would be 6 National Parks in 7 States. Enough of the Math, time to move on to Geography...</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+             <h2>Vacation</h2>
+            <p>What is a vacation? A vacation is a time to enjoy yourself, to get away from your problems, and most importantly, to have fun any way you like it. Some of us like to lounge on the beach and do nothing on vacation, others like to explore
+                the world and all of its fine glory. Whatever it may be, it's important not to being your problems with you on vacation. They need to stay home, where they belong (although it's better for them to go away completely, that doesn't
+                always happen).</p>
+            <p>With all of that said, let's take a look at all our big problems and make them go away</p>
+            <ul id="problems">
+                {{#each model.problems as |problem|}}
+                <li>{{problem}}</li>
+                {{/each}}
+            </ul>
+            <button id="hide" class="btn-block">Bye Bye!</button>
+        </div>
+        <div class="col-lg-4">
+             <h2>What should we bring?</h2>
+            <form style="font-size: 20px">
+              {{#each model.items as |item|}}
+                <input type='checkbox' name='item' value={{item}}>{{item}}<br>
+              {{/each}}
+                <br>Other:
+                <br>
+                <textarea name="message" style="color:black" rows="5" cols="20"></textarea>
+                <br>
+                {{ message-button }}
+            </form>
+        </div>
+    </div>

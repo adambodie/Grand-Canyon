@@ -9,8 +9,8 @@ module.exports = function(deployTarget) {
     ENV.build.environment = 'development';
     ENV.s3= {
       filePattern: '**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2,html}',
-      accessKeyId: 'AKIAJXWXLABXGQWIN6JQ',
-      secretAccessKey: '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',
+      accessKeyId: 'AKIAJMYXZLE4AJACNZEA',
+      secretAccessKey: '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',
       bucket: 'grand-canyon.bodiewebdesign.com',
       region: 'us-west-2'
   };
@@ -20,8 +20,8 @@ module.exports = function(deployTarget) {
     ENV.build.environment = 'production';
     ENV.s3= {
       filePattern: '**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2,html}',
-      accessKeyId: 'AKIAJXWXLABXGQWIN6JQ',
-      secretAccessKey: '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',
+      accessKeyId: 'AKIAJMYXZLE4AJACNZEA',
+      secretAccessKey: '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',
       bucket: 'grand-canyon.bodiewebdesign.com',
       region: 'us-west-2'
   };
@@ -31,8 +31,8 @@ module.exports = function(deployTarget) {
     ENV.build.environment = 'production';
     ENV.s3= {
       filePattern: '**/*.{js,css,png,gif,ico,jpg,map,xml,txt,svg,swf,eot,ttf,woff,woff2,html}',
-      accessKeyId: 'AKIAJXWXLABXGQWIN6JQ',
-      secretAccessKey: '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',
+      accessKeyId: 'AKIAJMYXZLE4AJACNZEA',
+      secretAccessKey: '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',
       bucket: 'grand-canyon.bodiewebdesign.com',
       region: 'us-west-2'
   };
@@ -43,3 +43,4 @@ module.exports = function(deployTarget) {
   // ENV object synchronously.
   return ENV;
 };
+
